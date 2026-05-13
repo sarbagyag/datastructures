@@ -23,4 +23,14 @@ void *vec_get(Vector *v, int index);
 int vec_size(Vector *v);
 void vec_free(Vector *v);
 
+// HashMap
+
+typedef struct HashMap HashMap;
+HashMap *map_create(void);
+void map_put(HashMap *map, const char *key, void *value);
+void *map_get(HashMap *map, const char *key);
+void map_delete(HashMap *map, const char *key);
+void map_free(HashMap *map);
+int map_count(HashMap *map);
+
 #endif
