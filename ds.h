@@ -18,7 +18,7 @@ int list_size(List *list);
 typedef struct Vector Vector;
 
 Vector *vec_create(void);
-void vec_push(Vector *v, int index);
+void vec_push(Vector *v, void *data);
 void *vec_get(Vector *v, int index);
 int vec_size(Vector *v);
 void vec_free(Vector *v);
